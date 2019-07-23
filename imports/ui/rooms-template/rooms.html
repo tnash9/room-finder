@@ -1,16 +1,11 @@
 <template name="rooms">
-  <div class="page">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="container-fluid">
-            <div class="flex-row-container">
-              {{#each rooms}}
-              {{> roomCard}}
-              {{/each}}
-            </div>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        {{> openRooms}}
+      </div>
+      <div class="col-lg-6">
+        {{> occupiedRooms}}
       </div>
     </div>
   </div>

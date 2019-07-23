@@ -15,6 +15,7 @@ body {
   font-family: Open Sans;
   color: var(--color-dark-blue);
   background-color: var(--color-light);
+  overflow-x: hidden;
 }
 
 .main-header {
@@ -31,4 +32,33 @@ body {
 
 .center-align {
   text-align: center;
+}
+
+.room {
+  position: relative;
+  margin: 2.5%;
+  padding: 2.5% 0;
+  border: var(--color-light-blue) 2px solid;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.room:hover {
+    box-shadow: 0 32px 48px 0 rgba(0,0,0,0.2);
+}
+  
+.room h2 {
+  color: var(--color-blue);
+  font-size: 200%;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  margin-right: .5%;
+  border: none;
+  font-size: 200%;
 }

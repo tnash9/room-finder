@@ -1,12 +1,12 @@
 <template name="roomCard">
   <div class="room center-align">
-      <div id="inner">
-      <h2>{{title}}</h2>
+    <button class="delete">&times;</button>
+    <div id="inner">
+      <h2>{{name}}</h2>
       <div class="image-container">
-          <img src="{{image}}"/>
+        <img src="{{image}}" />
       </div>
-      <h5>{{description}}</h5>
-      <h4>{{category}}</h4>
-      </div>
+      <h4>{{details}}</h4>
+    </div>
   </div>
 </template>
